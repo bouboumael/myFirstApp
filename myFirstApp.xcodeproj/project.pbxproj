@@ -8,15 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		D35647702A7F028F000EF99D /* myFirstAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D356476F2A7F028F000EF99D /* myFirstAppApp.swift */; };
-		D35647722A7F028F000EF99D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35647712A7F028F000EF99D /* ContentView.swift */; };
+		D35647722A7F028F000EF99D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35647712A7F028F000EF99D /* HomeView.swift */; };
 		D35647742A7F028F000EF99D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D35647732A7F028F000EF99D /* Assets.xcassets */; };
 		D35647772A7F028F000EF99D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D35647762A7F028F000EF99D /* Preview Assets.xcassets */; };
 		D35647812A7F0290000EF99D /* myFirstAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35647802A7F0290000EF99D /* myFirstAppTests.swift */; };
 		D356478B2A7F0290000EF99D /* myFirstAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D356478A2A7F0290000EF99D /* myFirstAppUITests.swift */; };
 		D356478D2A7F0290000EF99D /* myFirstAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D356478C2A7F0290000EF99D /* myFirstAppUITestsLaunchTests.swift */; };
 		D356479A2A7F05EB000EF99D /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35647992A7F05EB000EF99D /* Variables.swift */; };
-		D356479E2A7F0787000EF99D /* newView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D356479D2A7F0787000EF99D /* newView.swift */; };
-		D35971A02A811E26003C167A /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = D359719F2A811E26003C167A /* Team.swift */; };
+		D35971A02A811E26003C167A /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D359719F2A811E26003C167A /* TeamView.swift */; };
+		D35971A42A812C7E003C167A /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35971A32A812C7E003C167A /* Team.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		D356476C2A7F028F000EF99D /* myFirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myFirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D356476F2A7F028F000EF99D /* myFirstAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myFirstAppApp.swift; sourceTree = "<group>"; };
-		D35647712A7F028F000EF99D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D35647712A7F028F000EF99D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D35647732A7F028F000EF99D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D35647762A7F028F000EF99D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D356477C2A7F0290000EF99D /* myFirstAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myFirstAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,8 +48,8 @@
 		D356478A2A7F0290000EF99D /* myFirstAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myFirstAppUITests.swift; sourceTree = "<group>"; };
 		D356478C2A7F0290000EF99D /* myFirstAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myFirstAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D35647992A7F05EB000EF99D /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Variables.swift; path = Settings/Variables.swift; sourceTree = "<group>"; };
-		D356479D2A7F0787000EF99D /* newView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newView.swift; sourceTree = "<group>"; };
-		D359719F2A811E26003C167A /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		D359719F2A811E26003C167A /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
+		D35971A32A812C7E003C167A /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,10 +100,9 @@
 		D356476E2A7F028F000EF99D /* myFirstApp */ = {
 			isa = PBXGroup;
 			children = (
+				D35971A22A812C57003C167A /* models */,
+				D35971A12A812BFA003C167A /* views */,
 				D356476F2A7F028F000EF99D /* myFirstAppApp.swift */,
-				D35647712A7F028F000EF99D /* ContentView.swift */,
-				D359719F2A811E26003C167A /* Team.swift */,
-				D356479D2A7F0787000EF99D /* newView.swift */,
 				D35647732A7F028F000EF99D /* Assets.xcassets */,
 				D35647752A7F028F000EF99D /* Preview Content */,
 				D35647992A7F05EB000EF99D /* Variables.swift */,
@@ -134,6 +133,23 @@
 				D356478C2A7F0290000EF99D /* myFirstAppUITestsLaunchTests.swift */,
 			);
 			path = myFirstAppUITests;
+			sourceTree = "<group>";
+		};
+		D35971A12A812BFA003C167A /* views */ = {
+			isa = PBXGroup;
+			children = (
+				D35647712A7F028F000EF99D /* HomeView.swift */,
+				D359719F2A811E26003C167A /* TeamView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		D35971A22A812C57003C167A /* models */ = {
+			isa = PBXGroup;
+			children = (
+				D35971A32A812C7E003C167A /* Team.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,9 +283,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D356479A2A7F05EB000EF99D /* Variables.swift in Sources */,
-				D356479E2A7F0787000EF99D /* newView.swift in Sources */,
-				D35647722A7F028F000EF99D /* ContentView.swift in Sources */,
-				D35971A02A811E26003C167A /* Team.swift in Sources */,
+				D35647722A7F028F000EF99D /* HomeView.swift in Sources */,
+				D35971A02A811E26003C167A /* TeamView.swift in Sources */,
+				D35971A42A812C7E003C167A /* Team.swift in Sources */,
 				D35647702A7F028F000EF99D /* myFirstAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
