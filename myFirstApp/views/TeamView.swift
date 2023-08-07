@@ -39,7 +39,7 @@ extension TeamView {
         ]
     }
     
-    func teamLoop(team: Team) -> some View {
+    private func teamLoop(team: Team) -> some View {
         ZStack {
             HStack {
                 Image("mbo")
