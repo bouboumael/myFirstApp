@@ -21,4 +21,22 @@ enum teams {
     case E3
 }
 
+struct RandomUserResponse: Codable {
+    let results: [RandomUser]
+}
+
+struct RandomUser: Codable {
+    let picture: UserProfilePicture
+    let name: UserName
+}
+
+struct UserProfilePicture: Codable {
+    let large: String?
+}
+
+struct UserName: Codable {
+    let first: String
+    let last: String
+}
+
 

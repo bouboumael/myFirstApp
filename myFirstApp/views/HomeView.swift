@@ -35,6 +35,9 @@ struct HomeView: View {
             .navigationBarTitle("My First App")
             .navigationBarTitleDisplayMode(.inline)
             .foregroundColor(.green)
+            .tabItem {
+                Text("test")
+            }
         }
     }
 }
