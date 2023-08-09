@@ -19,8 +19,9 @@
 		D35971A42A812C7E003C167A /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35971A32A812C7E003C167A /* Team.swift */; };
 		D3EE44A32A82465E00055F3A /* TeamDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE44A22A82465E00055F3A /* TeamDescriptionView.swift */; };
 		D3EE44A62A838C6700055F3A /* RandomUserTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE44A52A838C6700055F3A /* RandomUserTask.swift */; };
-		D3EE44A82A838FD100055F3A /* CollaboratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE44A72A838FD100055F3A /* CollaboratorView.swift */; };
+		D3EE44A82A838FD100055F3A /* CollaboratorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE44A72A838FD100055F3A /* CollaboratorsView.swift */; };
 		D3EE44B42A83EF9300055F3A /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE44B32A83EF9300055F3A /* SwiftUIView.swift */; };
+		D3EE44B82A842EF500055F3A /* Collaborator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE44B72A842EF500055F3A /* Collaborator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +57,9 @@
 		D35971A32A812C7E003C167A /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		D3EE44A22A82465E00055F3A /* TeamDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDescriptionView.swift; sourceTree = "<group>"; };
 		D3EE44A52A838C6700055F3A /* RandomUserTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserTask.swift; sourceTree = "<group>"; };
-		D3EE44A72A838FD100055F3A /* CollaboratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollaboratorView.swift; sourceTree = "<group>"; };
+		D3EE44A72A838FD100055F3A /* CollaboratorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollaboratorsView.swift; sourceTree = "<group>"; };
 		D3EE44B32A83EF9300055F3A /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		D3EE44B72A842EF500055F3A /* Collaborator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collaborator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +151,6 @@
 			children = (
 				D3EE44AE2A83E26300055F3A /* pages */,
 				D3EE44AB2A83E17E00055F3A /* components */,
-				D3EE44A92A8391CA00055F3A /* team */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -174,7 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				D3EE44A22A82465E00055F3A /* TeamDescriptionView.swift */,
-				D3EE44A72A838FD100055F3A /* CollaboratorView.swift */,
+				D3EE44A72A838FD100055F3A /* CollaboratorsView.swift */,
+				D3EE44B72A842EF500055F3A /* Collaborator.swift */,
 			);
 			path = team;
 			sourceTree = "<group>";
@@ -182,6 +184,7 @@
 		D3EE44AB2A83E17E00055F3A /* components */ = {
 			isa = PBXGroup;
 			children = (
+				D3EE44A92A8391CA00055F3A /* team */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -326,7 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3EE44A82A838FD100055F3A /* CollaboratorView.swift in Sources */,
+				D3EE44A82A838FD100055F3A /* CollaboratorsView.swift in Sources */,
 				D3EE44A62A838C6700055F3A /* RandomUserTask.swift in Sources */,
 				D3EE44B42A83EF9300055F3A /* SwiftUIView.swift in Sources */,
 				D356479A2A7F05EB000EF99D /* Variables.swift in Sources */,
@@ -335,6 +338,7 @@
 				D35971A02A811E26003C167A /* TeamsView.swift in Sources */,
 				D35971A42A812C7E003C167A /* Team.swift in Sources */,
 				D35647702A7F028F000EF99D /* myFirstAppApp.swift in Sources */,
+				D3EE44B82A842EF500055F3A /* Collaborator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,7 +21,13 @@ enum teams {
     case E3
 }
 
-struct RandomUserResponse: Codable {
+struct Collaborators: Identifiable {
+    let id = UUID()
+    var imageURL: URL
+    var fullName: String
+}
+
+struct RandomUsersResponse: Codable {
     let results: [RandomUser]
 }
 
@@ -31,7 +37,7 @@ struct RandomUser: Codable {
 }
 
 struct UserProfilePicture: Codable {
-    let large: String?
+    let large: String
 }
 
 struct UserName: Codable {

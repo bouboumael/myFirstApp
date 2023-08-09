@@ -21,9 +21,7 @@ struct TeamDescriptionView: View {
                 .padding()
                 Spacer()
                 VStack(alignment: .leading) {
-                    ForEach(0..<10) { _ in
-                        CollaboratorView()
-                    }
+                    CollaboratorsView(teamCollaborators: team.numberOfTeamate)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading) // Aligner le contenu à gauche
                 .padding(.horizontal)

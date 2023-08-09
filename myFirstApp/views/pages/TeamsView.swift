@@ -20,7 +20,7 @@ struct TeamsView: View {
 extension TeamsView {
     
     private var imageSize: CGFloat {
-            return 130.0
+            return 90.0
         }
     
     private var teamsData : [Team] {
@@ -49,6 +49,7 @@ extension TeamsView {
                         Text("heure de fin: \(team.end)")
                     }
                     .foregroundColor(.primary)
+                    Spacer()
                     Image(systemName: "chevron.right")
                         .foregroundColor(.primary)
                 }
