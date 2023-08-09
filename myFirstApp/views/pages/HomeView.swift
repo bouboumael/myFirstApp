@@ -9,6 +9,21 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
+        TabView {
+            Home()
+                .tabItem {
+                    Label("Accueil",systemImage: "house.fill")
+                }
+            SwiftUIView()
+                .tabItem {
+                    Label("test", systemImage: "testtube.2")
+                }
+        }
+    }
+}
+
+struct Home: View {
+    var body: some View {
         NavigationView {
             VStack {
                 Spacer()
@@ -18,7 +33,7 @@ struct HomeView: View {
                     .foregroundColor(.purple)
                 Spacer()
                 NavigationLink(
-                    destination: TeamView(),
+                    destination: TeamsView(),
                     label: {
                         HStack {
                             Image(systemName: "person.3.fill")

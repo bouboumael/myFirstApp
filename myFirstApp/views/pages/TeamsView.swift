@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TeamView: View {
+struct TeamsView: View {
     
     var body: some View {
         VStack {
@@ -17,7 +17,7 @@ struct TeamView: View {
     
 }
 
-extension TeamView {
+extension TeamsView {
     
     private var imageSize: CGFloat {
             return 130.0
@@ -67,7 +67,7 @@ extension TeamView {
 
 struct TeamView_Previews: PreviewProvider {
     static var previews: some View {
-        TeamView()
+        TeamsView()
     }
 }
 
