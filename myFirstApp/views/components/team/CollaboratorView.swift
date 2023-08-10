@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Collaborator: View {
+struct CollaboratorView: View {
     let user: Collaborators
     let imageSize = 90.0
     var body: some View {
@@ -34,6 +34,6 @@ struct Collaborator: View {
 
 struct Collaborator_Previews: PreviewProvider {
     static var previews: some View {
-        Collaborator(user: Collaborators(imageURL: URL(string: "https://randomuser.me/api/portraits/women/59.jpg")!, fullName: "fullName"))
+        CollaboratorView(user: Collaborators(urlString: "https://randomuser.me/api/portraits/women/2.jpg", lastname: "String", firstname: "String"))
     }
 }

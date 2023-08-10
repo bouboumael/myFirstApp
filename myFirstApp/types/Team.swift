@@ -24,7 +24,23 @@ enum teams {
 struct Collaborators: Identifiable {
     let id = UUID()
     var imageURL: URL
-    var fullName: String
+    var lastname: String
+    var firstname: String
+    
+    var fullName: String {
+        return "\(lastname) \(firstname)"
+    }
+    
+    init(urlString: String, lastname: String, firstname: String) {
+        if let url = URL(string: urlString) {
+            self.imageURL = url
+        } else {
+            self.imageURL = URL(string: "https://randomuser.me/api/portraits/women/2.jpg")!
+        }
+        
+        self.lastname = lastname
+        self.firstname = firstname
+    }
 }
 
 struct RandomUsersResponse: Codable {
@@ -33,16 +49,17 @@ struct RandomUsersResponse: Codable {
 
 struct RandomUser: Codable {
     let picture: UserProfilePicture
-    let name: UserName
+    let name: UserProfileName
 }
 
 struct UserProfilePicture: Codable {
     let large: String
 }
 
-struct UserName: Codable {
+struct UserProfileName: Codable {
     let first: String
     let last: String
 }
+
 
 

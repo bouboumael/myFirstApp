@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D34A6F8F2A85991900EE6999 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A6F8E2A85991900EE6999 /* Persistence.swift */; };
 		D35647702A7F028F000EF99D /* myFirstAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D356476F2A7F028F000EF99D /* myFirstAppApp.swift */; };
 		D35647722A7F028F000EF99D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35647712A7F028F000EF99D /* HomeView.swift */; };
 		D35647742A7F028F000EF99D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D35647732A7F028F000EF99D /* Assets.xcassets */; };
@@ -17,11 +18,13 @@
 		D356479A2A7F05EB000EF99D /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35647992A7F05EB000EF99D /* Variables.swift */; };
 		D35971A02A811E26003C167A /* TeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D359719F2A811E26003C167A /* TeamsView.swift */; };
 		D35971A42A812C7E003C167A /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35971A32A812C7E003C167A /* Team.swift */; };
+		D3EB23472A85288900A98ACA /* MyFirstAppModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3EB23452A85288900A98ACA /* MyFirstAppModel.xcdatamodeld */; };
+		D3EB234B2A8592EE00A98ACA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3EB23492A8592D300A98ACA /* CoreData.framework */; };
 		D3EE44A32A82465E00055F3A /* TeamDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE44A22A82465E00055F3A /* TeamDescriptionView.swift */; };
 		D3EE44A62A838C6700055F3A /* RandomUserTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE44A52A838C6700055F3A /* RandomUserTask.swift */; };
 		D3EE44A82A838FD100055F3A /* CollaboratorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE44A72A838FD100055F3A /* CollaboratorsView.swift */; };
-		D3EE44B42A83EF9300055F3A /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE44B32A83EF9300055F3A /* SwiftUIView.swift */; };
-		D3EE44B82A842EF500055F3A /* Collaborator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE44B72A842EF500055F3A /* Collaborator.swift */; };
+		D3EE44B42A83EF9300055F3A /* NewCollaboratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE44B32A83EF9300055F3A /* NewCollaboratorView.swift */; };
+		D3EE44B82A842EF500055F3A /* CollaboratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE44B72A842EF500055F3A /* CollaboratorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D34A6F8E2A85991900EE6999 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		D356476C2A7F028F000EF99D /* myFirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myFirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D356476F2A7F028F000EF99D /* myFirstAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myFirstAppApp.swift; sourceTree = "<group>"; };
 		D35647712A7F028F000EF99D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -55,11 +59,14 @@
 		D35647992A7F05EB000EF99D /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Variables.swift; path = Settings/Variables.swift; sourceTree = "<group>"; };
 		D359719F2A811E26003C167A /* TeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsView.swift; sourceTree = "<group>"; };
 		D35971A32A812C7E003C167A /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		D3EB23462A85288900A98ACA /* MyFirstAppModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyFirstAppModel.xcdatamodel; sourceTree = "<group>"; };
+		D3EB23492A8592D300A98ACA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D3EB234A2A8592D300A98ACA /* libswiftCoreData.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftCoreData.tbd; path = usr/lib/swift/libswiftCoreData.tbd; sourceTree = SDKROOT; };
 		D3EE44A22A82465E00055F3A /* TeamDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDescriptionView.swift; sourceTree = "<group>"; };
 		D3EE44A52A838C6700055F3A /* RandomUserTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserTask.swift; sourceTree = "<group>"; };
 		D3EE44A72A838FD100055F3A /* CollaboratorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollaboratorsView.swift; sourceTree = "<group>"; };
-		D3EE44B32A83EF9300055F3A /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
-		D3EE44B72A842EF500055F3A /* Collaborator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collaborator.swift; sourceTree = "<group>"; };
+		D3EE44B32A83EF9300055F3A /* NewCollaboratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCollaboratorView.swift; sourceTree = "<group>"; };
+		D3EE44B72A842EF500055F3A /* CollaboratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollaboratorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3EB234B2A8592EE00A98ACA /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +102,7 @@
 				D356477F2A7F0290000EF99D /* myFirstAppTests */,
 				D35647892A7F0290000EF99D /* myFirstAppUITests */,
 				D356476D2A7F028F000EF99D /* Products */,
+				D3EB23482A8592C500A98ACA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,8 +119,9 @@
 		D356476E2A7F028F000EF99D /* myFirstApp */ = {
 			isa = PBXGroup;
 			children = (
+				D3EB23412A84D68E00A98ACA /* data */,
 				D3EE44A42A838C3A00055F3A /* services */,
-				D35971A22A812C57003C167A /* models */,
+				D35971A22A812C57003C167A /* types */,
 				D35971A12A812BFA003C167A /* views */,
 				D356476F2A7F028F000EF99D /* myFirstAppApp.swift */,
 				D35647732A7F028F000EF99D /* Assets.xcassets */,
@@ -155,12 +165,30 @@
 			path = views;
 			sourceTree = "<group>";
 		};
-		D35971A22A812C57003C167A /* models */ = {
+		D35971A22A812C57003C167A /* types */ = {
 			isa = PBXGroup;
 			children = (
 				D35971A32A812C7E003C167A /* Team.swift */,
 			);
-			path = models;
+			path = types;
+			sourceTree = "<group>";
+		};
+		D3EB23412A84D68E00A98ACA /* data */ = {
+			isa = PBXGroup;
+			children = (
+				D34A6F8E2A85991900EE6999 /* Persistence.swift */,
+				D3EB23452A85288900A98ACA /* MyFirstAppModel.xcdatamodeld */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		D3EB23482A8592C500A98ACA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3EB23492A8592D300A98ACA /* CoreData.framework */,
+				D3EB234A2A8592D300A98ACA /* libswiftCoreData.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D3EE44A42A838C3A00055F3A /* services */ = {
@@ -176,7 +204,7 @@
 			children = (
 				D3EE44A22A82465E00055F3A /* TeamDescriptionView.swift */,
 				D3EE44A72A838FD100055F3A /* CollaboratorsView.swift */,
-				D3EE44B72A842EF500055F3A /* Collaborator.swift */,
+				D3EE44B72A842EF500055F3A /* CollaboratorView.swift */,
 			);
 			path = team;
 			sourceTree = "<group>";
@@ -194,7 +222,7 @@
 			children = (
 				D359719F2A811E26003C167A /* TeamsView.swift */,
 				D35647712A7F028F000EF99D /* HomeView.swift */,
-				D3EE44B32A83EF9300055F3A /* SwiftUIView.swift */,
+				D3EE44B32A83EF9300055F3A /* NewCollaboratorView.swift */,
 			);
 			path = pages;
 			sourceTree = "<group>";
@@ -331,14 +359,16 @@
 			files = (
 				D3EE44A82A838FD100055F3A /* CollaboratorsView.swift in Sources */,
 				D3EE44A62A838C6700055F3A /* RandomUserTask.swift in Sources */,
-				D3EE44B42A83EF9300055F3A /* SwiftUIView.swift in Sources */,
+				D3EE44B42A83EF9300055F3A /* NewCollaboratorView.swift in Sources */,
 				D356479A2A7F05EB000EF99D /* Variables.swift in Sources */,
 				D35647722A7F028F000EF99D /* HomeView.swift in Sources */,
 				D3EE44A32A82465E00055F3A /* TeamDescriptionView.swift in Sources */,
 				D35971A02A811E26003C167A /* TeamsView.swift in Sources */,
 				D35971A42A812C7E003C167A /* Team.swift in Sources */,
+				D3EB23472A85288900A98ACA /* MyFirstAppModel.xcdatamodeld in Sources */,
+				D34A6F8F2A85991900EE6999 /* Persistence.swift in Sources */,
 				D35647702A7F028F000EF99D /* myFirstAppApp.swift in Sources */,
-				D3EE44B82A842EF500055F3A /* Collaborator.swift in Sources */,
+				D3EE44B82A842EF500055F3A /* CollaboratorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,6 +695,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D3EB23452A85288900A98ACA /* MyFirstAppModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D3EB23462A85288900A98ACA /* MyFirstAppModel.xcdatamodel */,
+			);
+			currentVersion = D3EB23462A85288900A98ACA /* MyFirstAppModel.xcdatamodel */;
+			path = MyFirstAppModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D35647642A7F028F000EF99D /* Project object */;
 }

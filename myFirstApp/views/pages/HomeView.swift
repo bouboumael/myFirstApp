@@ -14,7 +14,7 @@ struct HomeView: View {
                 .tabItem {
                     Label("Accueil",systemImage: "house.fill")
                 }
-            SwiftUIView()
+            NewCollaboratorView()
                 .tabItem {
                     Label("test", systemImage: "testtube.2")
                 }

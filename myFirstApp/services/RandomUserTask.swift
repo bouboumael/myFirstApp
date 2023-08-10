@@ -8,9 +8,7 @@ class RandomUserTask: ObservableObject {
             let decodedResponse = try JSONDecoder().decode(RandomUsersResponse.self, from: data)
             
             return decodedResponse.results.map { user in
-                let imageURL = URL(string: user.picture.large)
-                let fullName = "\(user.name.first) \(user.name.last)"
-                return Collaborators(imageURL: imageURL!, fullName: fullName)
+                return Collaborators(urlString: user.picture.large, lastname: user.name.last, firstname: user.name.first)
             }
         } catch {
             print("Error fetching data: \(error)")

@@ -16,7 +16,7 @@ struct CollaboratorsView: View {
     var body: some View {
         VStack {
             ForEach(users) { user in
-                Collaborator(user: user)
+                CollaboratorView(user: user)
             }
         }
         .onAppear {
